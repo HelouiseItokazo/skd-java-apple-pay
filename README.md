@@ -48,7 +48,7 @@ function processPaymentOrder(token, maxipagoAdditionalPaymentData) {
         xhr.onload = function () {
 ```
 
-**NOTE: Para mover para produção, é necessário alterar o endpoint para: **
+**NOTE: Para mover para produção, é necessário alterar o endpoint para:**
 
 Autenticação: //api.maxipago.net/UniversalAPI/rest/EncryptedWallet/authentication 
 
@@ -120,7 +120,7 @@ paymentRequest = {
 
 	startPaymentProcess(paymentRequest, maxipagoAdditionalPaymentData);
 ```
-- NOTE: Esta loja exemplo possui alguns logs para auxilia-lo na depuração, retire os logs antes de rodar em produção.  
+**NOTE: Esta loja exemplo possui alguns logs para auxilia-lo na depuração, retire os logs antes de rodar em produção.**
 
 ## apple_pay_mp.js 
 
