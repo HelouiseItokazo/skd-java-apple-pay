@@ -28,7 +28,7 @@ A integração com o Apple Pay requer a troca dois certificados com a maxiPago, 
 A maxiPago! disponibiliza um guia de afiliação completo para o Produto Apple Pay que te auxiliará neste processo de certificação e verificação de domínio, para mais informações, contate um de nossos representantes :) 
 
 
-### Setup
+### Configuração
 
 Nas funções que executam as chamadas à API REST de carteiras da maxiPago!, realize a configuração de seu endpoint para nosso ambiente de integração: 
 ```javascript
@@ -50,9 +50,9 @@ function processPaymentOrder(token, maxipagoAdditionalPaymentData) {
 
 **NOTE: Para mover para produção, é necessário alterar o endpoint para:**
 
-Autenticação: //api.maxipago.net/UniversalAPI/rest/EncryptedWallet/authentication 
+>Autenticação: //api.maxipago.net/UniversalAPI/rest/EncryptedWallet/authentication 
 
-Order: //api.maxipago.net/UniversalAPI/rest/EncryptedWallet/order
+>Order: //api.maxipago.net/UniversalAPI/rest/EncryptedWallet/order
 
 
 ### Fluxo Apple Pay
