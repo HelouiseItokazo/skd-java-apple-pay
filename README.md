@@ -48,7 +48,7 @@ function processPaymentOrder(token, maxipagoAdditionalPaymentData) {
         xhr.onload = function () {
 ```
 
-Para mover para produção, é necessário alterar o endpoint para:
+**NOTE: Para mover para produção, é necessário alterar o endpoint para: **
 
 Autenticação: //api.maxipago.net/UniversalAPI/rest/EncryptedWallet/authentication 
 
@@ -56,7 +56,7 @@ Order: //api.maxipago.net/UniversalAPI/rest/EncryptedWallet/order
 
 
 ### Fluxo Apple Pay
-![alt text](http://i1255.photobucket.com/albums/hh633/lramosouza/Apple%20Pay%20App%20-%20Fluxo%201_zpsizscv7eh.png)
+![alt text](https://www.websequencediagrams.com/cgi-bin/cdraw?lz=dGl0bGUgQXBwbGUgUGF5IEFwcCAtIEZsdXhvCgpBcHBEb0xvZ2lzdGEgLT4gU2Vydmlkb3IADAk6IHNlbGVjaW9uYXJJdGVucwoAEhEgLT4gADwMOiBpdGVuc0RvQ2FycmluaG8AVREAIA5JbmljaWFyIFBhZ2FtZW50AB4SbWF4aVBhZ29HYXRld2F5OgCBSAZQYXltZW50VG9rZW4Kbm90ZSBvdmVyAIExEiwALhIASQghIEFkZGl0aW9uYWwgRGF0YQplbmQgAEcFCgBmDwCBVBJSZXNwb25zZSBGcm9tAIEUEAAtEgCCFRFub3RpZmljYcOnw6NvIGRvIGF1dGggLyBjYXB0dXJlIAoKCg&s=rose)
 
 
 ## Implementação
