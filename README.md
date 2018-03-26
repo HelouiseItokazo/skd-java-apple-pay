@@ -64,9 +64,10 @@ function processPaymentOrder(token, maxipagoAdditionalPaymentData) {
 <img src="http://www.maxipago.com/docs/apple_pay_images_wiki/checkout_page_apple_pay_on_the_web.jpg" width="60%">
 
 - Tela de confirmação no Safari, solicitando a confirmação em um iPhone:
-<img src="http://www.maxipago.com/docs/apple_pay_images_wiki/checkout_page_apple_pay_on_the_web_confirmation.jpg" width="20%">
+<img src="http://www.maxipago.com/docs/apple_pay_images_wiki/checkout_page_apple_pay_on_the_web_confirmation.jpg" width="30%">
 
-- Telas de autenticação de touch ID no iPhone, com processamento e sucesso:
+- Telas de autenticação no iPhone, com processamento e sucesso:
+
 <img src="http://www.maxipago.com/docs/apple_pay_images_wiki/checkout_page_apple_pay_on_the_web_touch_id.jpg" width="20%"> <img src="http://www.maxipago.com/docs/apple_pay_images_wiki/checkout_page_apple_pay_on_the_web_processing_touch_id.jpg" width="20%"> <img src="http://www.maxipago.com/docs/apple_pay_images_wiki/checkout_page_apple_pay_on_the_web_touch_id_done.jpg" width="20%">
 
 - Telas de sucesso de execução:
