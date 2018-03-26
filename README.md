@@ -124,4 +124,4 @@ paymentRequest = {
 
 ## apple_pay_mp.js 
 
-Esta lib contém os métodos que são responsáveis por autenticar o merchant junto à apple, processar o pagamento junto à maxiPago e exibit ou não o botão Apple Pay (o botão será exibido somente no navegador Safari).
+> Esta lib contém os métodos que são responsáveis por autenticar o merchant junto à apple, processar o pagamento junto à maxiPago! e exibir ou não o botão Apple Pay (o botão será exibido somente no navegador Safari).
