@@ -63,13 +63,13 @@ function processPaymentOrder(token, maxipagoAdditionalPaymentData) {
 
 Preencher as suas informações de carrinho acumuladas, também pode-se configurar as bandeiras a serem utilizadas e o tipo de segurança: 
 
-supportedNetworks: bandeiras que deseja dar suporte, no momento, a maxiPago! dá suporte à mastercard e visa.
+- supportedNetworks: bandeiras que deseja dar suporte, no momento, a maxiPago! dá suporte à mastercard e visa.
 
-merchantCapabilities: features a serem suportadas, no caso, habilitar o suporte à 3DS: supports3DS.
+- merchantCapabilities: features a serem suportadas, no caso, habilitar o suporte à 3DS: supports3DS.
 
-requiredShippingContactFields : definir quais campos deseja que o preenchimento seja obrigatório
+- requiredShippingContactFields : definir quais campos deseja que o preenchimento seja obrigatório
 
-maxipagoAdditionalPaymentData: adicionar os parâmetros adicionais da maxiPago!
+- maxipagoAdditionalPaymentData: adicionar os parâmetros adicionais da maxiPago!
 
 
 ## mystore.js
