@@ -28,7 +28,7 @@ A integração com o Apple Pay requer a troca dois certificados com a maxiPago, 
 A maxiPago! disponibiliza um guia de afiliação completo para o Produto Apple Pay que te auxiliará neste processo de certificação e verificação de domínio, para mais informações, contate um de nossos representantes :) 
 
 
-### Setup
+### Configuração
 
 Nas funções que executam as chamadas à API REST de carteiras da maxiPago!, realize a configuração de seu endpoint para nosso ambiente de integração: 
 ```javascript
@@ -48,28 +48,44 @@ function processPaymentOrder(token, maxipagoAdditionalPaymentData) {
         xhr.onload = function () {
 ```
 
-Para mover para produção, é necessário alterar o endpoint para:
+**NOTE: Para mover para produção, é necessário alterar o endpoint para:**
 
-Autenticação: //api.maxipago.net/UniversalAPI/rest/EncryptedWallet/authentication 
+>Autenticação: //api.maxipago.net/UniversalAPI/rest/EncryptedWallet/authentication 
 
-Order: //api.maxipago.net/UniversalAPI/rest/EncryptedWallet/order
+>Order: //api.maxipago.net/UniversalAPI/rest/EncryptedWallet/order
 
 
 ### Fluxo Apple Pay
-![alt text](http://i1255.photobucket.com/albums/hh633/lramosouza/Apple%20Pay%20App%20-%20Fluxo%201_zpsizscv7eh.png)
+![alt text](https://www.websequencediagrams.com/cgi-bin/cdraw?lz=dGl0bGUgQXBwbGUgUGF5IEFwcCAtIEZsdXhvCgpBcHBEb0xvZ2lzdGEgLT4gU2Vydmlkb3IADAk6IHNlbGVjaW9uYXJJdGVucwoAEhEgLT4gADwMOiBpdGVuc0RvQ2FycmluaG8AVREAIA5JbmljaWFyIFBhZ2FtZW50AB4SbWF4aVBhZ29HYXRld2F5OgCBSAZQYXltZW50VG9rZW4Kbm90ZSBvdmVyAIExEiwALhIASQghIEFkZGl0aW9uYWwgRGF0YQplbmQgAEcFCgBmDwCBVBJSZXNwb25zZSBGcm9tAIEUEAAtEgCCFRFub3RpZmljYcOnw6NvIGRvIGF1dGggLyBjYXB0dXJlIAoKCg&s=rose)
 
+### Fluxo do Produto
+
+- Tela de checkout:
+<img src="http://www.maxipago.com/docs/apple_pay_images_wiki/checkout_page_apple_pay_on_the_web.jpg" width="60%">
+
+- Tela de confirmação no Safari, solicitando a confirmação em um iPhone:
+<img src="http://www.maxipago.com/docs/apple_pay_images_wiki/checkout_page_apple_pay_on_the_web_confirmation.jpg" width="30%">
+
+- Telas de autenticação no iPhone, com processamento e sucesso:
+
+<img src="http://www.maxipago.com/docs/apple_pay_images_wiki/checkout_page_apple_pay_on_the_web_touch_id.jpg" width="20%"> <img src="http://www.maxipago.com/docs/apple_pay_images_wiki/checkout_page_apple_pay_on_the_web_processing_touch_id.jpg" width="20%"> <img src="http://www.maxipago.com/docs/apple_pay_images_wiki/checkout_page_apple_pay_on_the_web_touch_id_done.jpg" width="20%">
+
+- Telas de sucesso de execução:
+<img src="http://www.maxipago.com/docs/apple_pay_images_wiki/checkout_page_apple_pay_on_the_web_confirmation_done.jpg" width="30%">
+
+<img src="http://www.maxipago.com/docs/apple_pay_images_wiki/checkout_page_apple_pay_on_the_web_confirmation_success.jpg" width="30%">
 
 ## Implementação
 
 Preencher as suas informações de carrinho acumuladas, também pode-se configurar as bandeiras a serem utilizadas e o tipo de segurança: 
 
-supportedNetworks: bandeiras que deseja dar suporte, no momento, a maxiPago! dá suporte à mastercard e visa.
+- supportedNetworks: bandeiras que deseja dar suporte, no momento, a maxiPago! dá suporte à mastercard e visa.
 
-merchantCapabilities: features a serem suportadas, no caso, habilitar o suporte à 3DS: supports3DS.
+- merchantCapabilities: features a serem suportadas, no caso, habilitar o suporte à 3DS: supports3DS.
 
-requiredShippingContactFields : definir quais campos deseja que o preenchimento seja obrigatório
+- requiredShippingContactFields : definir quais campos deseja que o preenchimento seja obrigatório
 
-maxipagoAdditionalPaymentData: adicionar os parâmetros adicionais da maxiPago!
+- maxipagoAdditionalPaymentData: adicionar os parâmetros adicionais da maxiPago!
 
 
 ## mystore.js
@@ -120,8 +136,8 @@ paymentRequest = {
 
 	startPaymentProcess(paymentRequest, maxipagoAdditionalPaymentData);
 ```
-- NOTE: Esta loja exemplo possui alguns logs para auxilia-lo na depuração, retire os logs antes de rodar em produção.  
+**NOTE: Esta loja exemplo possui alguns logs para auxilia-lo na depuração, retire os logs antes de rodar em produção.**
 
 ## apple_pay_mp.js 
 
-Esta lib contém os métodos que são responsáveis por autenticar o merchant junto à apple, processar o pagamento junto à maxiPago e exibit ou não o botão Apple Pay (o botão será exibido somente no navegador Safari).
+> Esta lib contém os métodos que são responsáveis por autenticar o merchant junto à apple, processar o pagamento junto à maxiPago! e exibir ou não o botão Apple Pay (o botão será exibido somente no navegador Safari).
