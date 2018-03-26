@@ -58,6 +58,21 @@ function processPaymentOrder(token, maxipagoAdditionalPaymentData) {
 ### Fluxo Apple Pay
 ![alt text](https://www.websequencediagrams.com/cgi-bin/cdraw?lz=dGl0bGUgQXBwbGUgUGF5IEFwcCAtIEZsdXhvCgpBcHBEb0xvZ2lzdGEgLT4gU2Vydmlkb3IADAk6IHNlbGVjaW9uYXJJdGVucwoAEhEgLT4gADwMOiBpdGVuc0RvQ2FycmluaG8AVREAIA5JbmljaWFyIFBhZ2FtZW50AB4SbWF4aVBhZ29HYXRld2F5OgCBSAZQYXltZW50VG9rZW4Kbm90ZSBvdmVyAIExEiwALhIASQghIEFkZGl0aW9uYWwgRGF0YQplbmQgAEcFCgBmDwCBVBJSZXNwb25zZSBGcm9tAIEUEAAtEgCCFRFub3RpZmljYcOnw6NvIGRvIGF1dGggLyBjYXB0dXJlIAoKCg&s=rose)
 
+### Fluxo do Produto
+
+- Tela de checkout:
+<img src="http://www.maxipago.com/docs/apple_pay_images_wiki/checkout_page_apple_pay_on_the_web.jpg" width="60%">
+
+- Tela de confirmação no Safari, solicitando a confirmação em um iPhone:
+<img src="http://www.maxipago.com/docs/apple_pay_images_wiki/checkout_page_apple_pay_on_the_web_confirmation.jpg" width="20%">
+
+- Telas de autenticação de touch ID no iPhone, com processamento e sucesso:
+<img src="http://www.maxipago.com/docs/apple_pay_images_wiki/checkout_page_apple_pay_on_the_web_touch_id.jpg" width="20%"> <img src="http://www.maxipago.com/docs/apple_pay_images_wiki/checkout_page_apple_pay_on_the_web_processing_touch_id.jpg" width="20%"> <img src="http://www.maxipago.com/docs/apple_pay_images_wiki/checkout_page_apple_pay_on_the_web_touch_id_done.jpg" width="20%">
+
+- Telas de sucesso de execução:
+<img src="http://www.maxipago.com/docs/apple_pay_images_wiki/checkout_page_apple_pay_on_the_web_confirmation_done.jpg" width="30%">
+
+<img src="http://www.maxipago.com/docs/apple_pay_images_wiki/checkout_page_apple_pay_on_the_web_confirmation_success.jpg" width="30%">
 
 ## Implementação
 
